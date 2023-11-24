@@ -1,0 +1,66 @@
+page-tuperfil {
+    .profile-info {
+      padding: 16px;
+  
+      .profile-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+  
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 50%;
+        }
+      }
+  
+      h3 {
+        margin-top: 8px;
+        font-size: 1.5rem;
+      }
+  
+      p {
+        margin-top: 8px;
+        font-size: 1rem;
+      }
+  
+      ion-row.profile-stats {
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+  
+        h4 {
+          font-size: 1rem;
+        }
+  
+        p {
+          font-size: 1rem;
+        }
+      }
+  
+      .button-bar {
+        display: flex;
+        gap: 8px;
+  
+        ion-button {
+          flex: 1;
+          --ion-color-base: black; // Ajusta el color base del botón
+          --ion-color-contrast: white; // Ajusta el color del texto del botón
+        }
+      }
+    }
+  
+    .image-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 8px;
+      padding: 16px;
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  

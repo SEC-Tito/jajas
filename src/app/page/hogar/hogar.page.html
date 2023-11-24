@@ -1,0 +1,255 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="victor">
+    <div class="title-container">
+      <ion-title class="pupy">Puppygram</ion-title>
+      <div class="button-container">
+        <button class="heart-button" id="auto-trigger" (click)="presentPopover($event, 'heart')">
+          <ion-badge slot="start">11</ion-badge>
+          <ion-icon name="heart"></ion-icon>
+        </button>
+        <ion-popover #popoverHeart [isOpen]="isOpenHeart" (didDismiss)="isOpenHeart = false" trigger="auto-trigger" size="auto">
+          <ng-template>
+            <ion-content class="ion-padding">¡Profe, no me lo va a creer, pero me olvidé de hacer esta parte! 👻👻</ion-content>
+          </ng-template>
+        </ion-popover>
+        <button class="message-button" id="cover-trigger" (click)="presentPopover($event, 'message')">
+          <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+        </button>
+        <ion-popover #popoverMessage [isOpen]="isOpenMessage" (didDismiss)="isOpenMessage = false" trigger="cover-trigger" size="cover">
+          <ng-template>
+            <ion-content class="ion-padding">jaja profe tambien me olvide de hacerle este de aca jajajajas</ion-content>
+          </ng-template>
+        </ion-popover>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+ <div class="icon-container-wrapper">
+  <div class="icon-container">
+    <div class="icon">
+      <svg class="line" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="49" fill="transparent" stroke="url(#gradient)" stroke-width="5"/>
+        <defs>
+          <linearGradient id="gradient" gradientTransform="rotate(90)">
+            <stop offset="0%" stop-color="yellow"/>
+            <stop offset="50%" stop-color="red"/>
+            <stop offset="100%" stop-color="violet"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <img src="https://cdn.leonardo.ai/users/a3df9ed6-fef2-4302-a2e5-191e426b7d3d/generations/59ece6bb-af73-4ca7-962d-967ce4d020d2/Absolute_Reality_v16_dog_with_sunglasses_sticking_out_its_tong_0.jpg" alt="Icono 1">
+    </div>
+  </div>
+
+  <div class="icon-container">
+    <div class="icon">
+      <svg class="line" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="49" fill="transparent" stroke="url(#gradient)" stroke-width="5"/>
+        <defs>
+          <linearGradient id="gradient" gradientTransform="rotate(90)">
+            <stop offset="0%" stop-color="yellow"/>
+            <stop offset="50%" stop-color="red"/>
+            <stop offset="100%" stop-color="violet"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <img src="https://cdn.leonardo.ai/users/a3df9ed6-fef2-4302-a2e5-191e426b7d3d/generations/fb569c6f-e836-41f8-9c35-120b52469f88/Absolute_Reality_v16_blue_haired_woman_posing_with_2_fingers_1.jpg?w=512" alt="Icono 1">
+    </div>
+  </div>
+
+  <div class="icon-container">
+    <div class="icon">
+      <svg class="line" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="49" fill="transparent" stroke="url(#gradient)" stroke-width="5"/>
+        <defs>
+          <linearGradient id="gradient" gradientTransform="rotate(90)">
+            <stop offset="0%" stop-color="yellow"/>
+            <stop offset="50%" stop-color="red"/>
+            <stop offset="100%" stop-color="violet"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <img src="https://cdn.leonardo.ai/users/384ab5c8-55d8-47a1-be22-6a274913c324/generations/6141aad4-30eb-4d08-a16b-43c147a41f77/variations/alchemyrefiner_alchemymagic_2_6141aad4-30eb-4d08-a16b-43c147a41f77_0.jpg?w=512" alt="Icono 1">
+    </div>
+  </div>
+
+  <div class="icon-container">
+    <div class="icon">
+      <svg class="line" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="49" fill="transparent" stroke="url(#gradient)" stroke-width="5"/>
+        <defs>
+          <linearGradient id="gradient" gradientTransform="rotate(90)">
+            <stop offset="0%" stop-color="yellow"/>
+            <stop offset="50%" stop-color="red"/>
+            <stop offset="100%" stop-color="violet"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <img src="https://cdn.leonardo.ai/users/a3df9ed6-fef2-4302-a2e5-191e426b7d3d/generations/df04643d-98bc-481d-a69a-87a0406e0734/PhotoReal_echi_0.jpg?w=512" alt="Icono 1">
+    </div>
+  </div>
+</div>
+
+  </ion-list>
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="display: flex; align-items: center;">
+        <div style="width: 65px; height: 65px; border-radius: 50%; overflow: hidden; background-color: yellow;">
+          <div style="width: 100%; height: 100%; border-radius: 50%; overflow: hidden; background-color: red;">
+            <img src="https://cdn.leonardo.ai/users/a3df9ed6-fef2-4302-a2e5-191e426b7d3d/generations/40609d8a-f21c-49ec-8cb7-e120a154812f/Anime_Pastel_Dream_handsome_man_with_wolf_ears_and_a_scar_on_h_0.jpg?w=512" alt="@Kaeya" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+        <span style="font-size: 18px;">Kaeya</span>
+      </ion-card-title>
+      <ion-card-subtitle>SirWolfering</ion-card-subtitle>
+    </ion-card-header>
+    <img alt="Silhouette of mountains" src="https://cdn.leonardo.ai/users/7018d082-dbeb-47b2-8e0a-63c87c5d6b8d/generations/ad21a302-1806-4ceb-a763-469bc119c538/variations/Default_Loup_en_colre_1_ad21a302-1806-4ceb-a763-469bc119c538_1.jpg?w=512" />
+  
+    <ion-footer>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-button>
+            <ion-icon name="heart-outline"></ion-icon>
+          </ion-button>
+          <ion-button>
+            <ion-icon name="chatbubble-outline"></ion-icon>
+          </ion-button>
+          <ion-button>
+            <ion-icon name="share-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+          
+        </ion-buttons>
+      </ion-toolbar>
+      <ion-card-content>
+        Déjate cautivar por el poder y la belleza de este lobo, y conecta con la grandeza de la naturaleza que nos rodea. 🐺🌿 #LoboSalvaje #NaturalezaIndomable #VidaSalvaje #ProtegeLaNaturaleza"
+      </ion-card-content>
+    </ion-footer>
+  </ion-card>
+
+
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="display: flex; align-items: center;">
+        <div style="width: 65px; height: 65px; border-radius: 100%; overflow: hidden; background-color: yellow;">
+          <div style="width: 100%; height: 100%; border-radius: 60%; overflow: hidden; background-color: red;">
+            <img src="https://cdn.leonardo.ai/users/a3df9ed6-fef2-4302-a2e5-191e426b7d3d/generations/8a83a15d-6e1d-4bf5-bec8-bc4ad8a66ab6/Leonardo_Vision_XL_dog_with_hat_and_glasses_1.jpg?w=512" alt="@Kaeya" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+        <span style="font-size: 20px;">Razor</span>
+      </ion-card-title>
+      <ion-card-subtitle>El perro que baila por dinero</ion-card-subtitle>
+    </ion-card-header>
+    <img alt="Silhouette of mountains" src="https://cdn.leonardo.ai/users/4994512e-0316-4e97-a1cd-0eb21c72d4fd/generations/c4f6d2a9-420f-4f99-bec4-37034634e315/variations/Default_Cat_2_c4f6d2a9-420f-4f99-bec4-37034634e315_1.jpg?w=512" />
+  
+    <ion-footer>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-button>
+            <ion-icon name="heart-outline"></ion-icon>
+          </ion-button>
+          <ion-button>
+            <ion-icon name="chatbubble-outline"></ion-icon>
+          </ion-button>
+          <ion-button>
+            <ion-icon name="share-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+          
+        </ion-buttons>
+      </ion-toolbar>
+      <ion-card-content>
+        Que el gato vaya y chingue a toda su pinche madre 😡🤬🤬😡</ion-card-content>
+    </ion-footer>
+  </ion-card>
+
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="display: flex; align-items: center;">
+        <div style="width: 65px;  height: 65px; border-radius: 50%; overflow: hidden; background-color: yellow;">
+          <div style="width: 100%; height: 100%; border-radius: 50%; overflow: hidden; background-color: red;">
+            <img   src="https://cdn.leonardo.ai/users/a3df9ed6-fef2-4302-a2e5-191e426b7d3d/generations/264c4491-772b-4ddb-a886-780ba489959d/Absolute_Reality_v16_beautiful_girl_with_cat_ears_and_tail_0.jpg?w=512" alt="@Kaeya" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+        <span style="font-size: 20px;">Furina</span>
+      </ion-card-title>
+      <ion-card-subtitle>Makoto</ion-card-subtitle>
+    </ion-card-header>
+    <img alt="Silhouette of mountains" src="https://cdn.leonardo.ai/users/00ffbc78-1abf-444c-8dee-fafdde36a1ea/generations/978cc2a9-8684-4700-91dd-462207dd287e/variations/alchemyrefiner_alchemymagic_1_978cc2a9-8684-4700-91dd-462207dd287e_0.jpg?w=512" />
+  
+    <ion-footer>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-button>
+            <ion-icon name="heart-outline"></ion-icon>
+          </ion-button>
+          <ion-button>
+            <ion-icon name="chatbubble-outline"></ion-icon>
+          </ion-button>
+          <ion-button>
+            <ion-icon name="share-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+          
+        </ion-buttons>
+      </ion-toolbar>
+      <ion-card-content>
+        Únete a esta aventura única y comparte el mensaje de unidad, fe y valentía que nos brinda esta imagen. ¡Juntos, podemos conquistar el mundo y difundir el amor y la paz! 🐉✨ #FeInquebrantable #DragónDivino #UnidosEnLaEsperanza #PapaMontandoDragón"
+      </ion-card-content>
+    </ion-footer>
+  </ion-card>
+
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="display: flex; align-items: center;">
+        <div style="width: 65px; height: 65px; border-radius: 50%; overflow: hidden; background-color: yellow;">
+          <div style="width: 100%; height: 100%; border-radius: 50%; overflow: hidden; background-color: red;">
+            <img src="https://cdn.leonardo.ai/users/ed2f6645-f4be-42fa-9bb7-1c987d8fdb2f/generations/f6ad845c-c735-4ea7-98be-3b33fdcf84a5/DreamShaper_v7_golden_retriever_en_patineta_con_bombas_de_fond_2.jpg?w=512" alt="@Kaeya" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+        <span style="font-size: 18px;">cyno</span>
+      </ion-card-title>
+      <ion-card-subtitle>El perro waton </ion-card-subtitle>
+    </ion-card-header>
+    <img alt="Silhouette of mountains" src="https://cdn.leonardo.ai/users/a3df9ed6-fef2-4302-a2e5-191e426b7d3d/generations/ce0169e8-08be-4772-bf0b-b05299b0eea8/DreamShaper_v7_dog_with_mariachi_hat_0.jpg?w=512" />
+  
+    <ion-footer>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-button>
+            <ion-icon name="heart-outline"></ion-icon>
+          </ion-button>
+          <ion-button>
+            <ion-icon name="chatbubble-outline"></ion-icon>
+          </ion-button>
+          <ion-button>
+            <ion-icon name="share-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+          
+        </ion-buttons>
+      </ion-toolbar>
+      <ion-card-content>
+   Arriba mexico cabrones    </ion-card-content>
+    </ion-footer>
+  </ion-card>
+
+
+
+</ion-content>

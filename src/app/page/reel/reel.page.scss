@@ -1,0 +1,14 @@
+page-tupagina {
+    .gif-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .responsive-gif {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px; /* Ajusta según sea necesario para el espacio entre los GIFs */
+    }
+  }
+  

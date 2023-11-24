@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- Parte izquierda del encabezado -->
+    <ion-buttons slot="start">
+      <ion-icon name="lock-closed-outline"></ion-icon>
+      <ion-label>Usuario</ion-label>
+    </ion-buttons>
+
+    <!-- Parte derecha del encabezado -->
+    <ion-buttons slot="end">
+      <ion-icon name="add-outline"></ion-icon>
+      <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Sección de información del perfil -->
+  <div class="profile-info">
+    <!-- Imagen del perfil y detalles -->
+    <ion-row>
+      <ion-col size="4">
+        <div class="profile-image">
+          <img src="https://cdn.leonardo.ai/users/a3df9ed6-fef2-4302-a2e5-191e426b7d3d/generations/b914c584-8d52-49aa-97e0-eb790ddd8b98/Leonardo_Vision_XL_25_year_old_woman_with_white_hair_and_purpl_0.jpg" alt="Imagen de perfil">
+        </div>
+      </ion-col>
+      <ion-col size="8">
+        <h3>Mage_lin</h3>
+        <p>Que pasara mañana?</p>
+        <ion-row class="profile-stats">
+          <ion-col>
+            <h4>Publicaciones</h4>
+            <p>123</p>
+          </ion-col>
+          <ion-col>
+            <h4>Seguidores</h4>
+            <p>456</p>
+          </ion-col>
+          <ion-col>
+            <h4>Seguidos</h4>
+            <p>789</p>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+
+    <!-- Botones de edición del perfil -->
+    <ion-row class="button-bar">
+      <ion-col>
+        <ion-button expand="full" color="primary">Editar perfil</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="full" color="secondary">Compartir perfil</ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <!-- Sección de imágenes -->
+  <div class="image-section">
+    <!-- Aquí puedes agregar imágenes usando <ion-img> o <img> -->
+    <img src="https://cdn.leonardo.ai/users/a3df9ed6-fef2-4302-a2e5-191e426b7d3d/generations/0a05ede0-9289-4e3a-9a75-e4b6fff8b98a/Leonardo_Vision_XL_dog_husky_1.jpg?w=512" alt="Imagen 1">
+    <img src="https://cdn.leonardo.ai/users/a3df9ed6-fef2-4302-a2e5-191e426b7d3d/generations/0a05ede0-9289-4e3a-9a75-e4b6fff8b98a/Leonardo_Vision_XL_dog_husky_0.jpg" alt="Imagen 2">
+    <img src="imagen2.jpg" alt="Imagen 2">
+    <img src="imagen2.jpg" alt="Imagen 2">
+    <!-- Agrega más imágenes según sea necesario -->
+  </div>
+</ion-content>

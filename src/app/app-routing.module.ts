@@ -8,8 +8,13 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'tab',
     pathMatch: 'full'
+  },
+  
+  {
+    path: 'tab',
+    loadChildren: () => import('./page/tab/tab.module').then( m => m.TabPageModule)
   },
 ];
 

@@ -74,6 +74,16 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+     /** lvictor**/
+     --ion-color-victor: rgb(24,20,20);
+     --ion-color-victor-rgb: NaN,24,20;
+     --ion-color-victor-contrast: #ffffff;
+     --ion-color-victor-contrast-rgb: 255,255,255;
+     --ion-color-victor-shade: #181414;
+     --ion-color-victor-tint: #181414;
+
+     
 }
 
 @media (prefers-color-scheme: dark) {
